@@ -1,0 +1,164 @@
+/* MMO Styles
+-----------------------------------------------------------*/
+
+body
+{
+    background-color:#111828;
+    font-family:Calibri;
+    color:#002244;
+}
+
+
+h2
+{
+    font-family:Tahoma;
+    color:#002244;
+}
+
+h4
+{
+    color:#A9D4FF;
+    background-color:#224466; 
+    border-radius: 5px;  
+    box-shadow: 4px 4px 7px #777799; 
+    padding:2px;
+}
+
+h5
+{
+    font-style:italic;
+}
+
+.firstLetter
+{
+    font-size:large;
+    text-style:bold;
+}
+
+.menuItem
+{   
+    font-size:medium;
+    color:#A9D4FF;
+    background-color:#224466; 
+    border-radius: 5px;  
+    box-shadow: 4px 4px 7px #777799; 
+    padding:2px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.menuSubItem
+{
+    cursor:pointer;
+    color:#002244;
+    text-decoration:none;
+}
+.menuSubItem:hover
+{
+    color:#447799;
+}
+
+.menuItem:hover
+{
+    color:#335588;
+    background-color:#6688bb; 
+    box-shadow: 2px 2px 7px #5588ff; 
+}
+
+.divContent
+{
+    margin:auto;
+    margin-top:100px;
+    border:1px solid #161C2C;
+    max-width:1024px;
+    min-width:840;
+    position:relative;   
+}
+
+.divMenu
+{
+    background-color:#A9D4FF;
+    border:5px outset #547799;
+    width:200px;
+    text-align:center;     
+    border-radius: 45px;  /* 
+    box-shadow: -5px 4px 90px #ff3333;  */
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:15px;
+    padding-bottom:15px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C0E0FF', endColorstr='#7090B0');
+    background: -moz-linear-gradient(top, #CEF, #79B);
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEF), to(#79B));
+}
+
+.divMenu:hover
+{
+    /*box-shadow: -5px 4px 95px #ff1111; */
+}
+
+.divHolder
+{
+    position:absolute;
+    top:0px;
+    margin-left:280px;
+    min-height:500px;
+    width:400px;    
+    border-radius: 50px; /* */
+    background-color:#A9D4FF;
+    border:5px outset #547799;
+    box-shadow: 5px 4px 90px #3333ff;  
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:20px;
+    cursor:default;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C0E0FF', endColorstr='#7090B0');
+    background: -moz-linear-gradient(top, #CEF, #79B);
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEF), to(#79B));
+}
+
+.divHolder:hover
+{
+    box-shadow: 5px 4px 95px #2121ff; 
+}
+
+.divAd
+{
+    position:absolute;
+    top:0px;
+    margin-left:822px;
+    border:1px solid #161C2C;
+    width:200px;
+    color:#1A2232;
+}
+
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}

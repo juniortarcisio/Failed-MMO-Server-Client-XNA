@@ -1,0 +1,53 @@
+﻿<%@ Master Language="VB" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery-1.4.1.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Url.Content("~/Scripts/master.js") %>"></script>
+    <link href="<%= Url.Content("~/Content/Site.css") %>" rel="Stylesheet" />
+</head>
+<body>
+        <div class="divContent">
+            <div class="divMenu">
+                <div id="mnuGame" class="menuItem">Game</div>
+                <div id="mnuSubGame" style="display:none">
+                    <a class="menuSubItem" href="<%= Url.Action("Welcome","Game") %>">Welcome</a><br />
+                    <a class="menuSubItem" href="<%= Url.Action("News","Game") %>">News</a><br />
+                    <a class="menuSubItem" href="<%= Url.Action("Download","Game") %>">Download</a><br />
+                    <a class="menuSubItem" href="<%= Url.Action("Screenshots","Game") %>">Screenshots</a><br />
+                </div>
+                <div id="mnuCommunity" class="menuItem">Community</div>
+                <div id="mnuSubCommunity" style="display:none">
+                    <div class="menuSubItem">Characters</div>
+                    <div class="menuSubItem">Guilds</div>
+                    <div class="menuSubItem">Rankings</div>
+                </div>
+                <div id="mnuSupport" class="menuItem">Support</div>
+                <div id="mnuSubSupport" style="display:none">
+                    <div class="menuSubItem">FAQ</div>
+                    <div class="menuSubItem">Rules</div>
+                    <div class="menuSubItem">Legal</div>
+                </div>
+                <div id="mnuAbout" class="menuItem">About</div>
+                <div id="mnuSubAbout" style="display:none">
+                    <div class="menuSubItem">Credits</div>
+                </div>
+            </div>
+            <div class="divHolder">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                    
+            </div>
+            <div class="divAd">
+            AD AD AD<br />
+            COISAS INUTEIS
+            </div>
+        </div>        
+
+        <audio autoplay loop>
+          <source src="<%= Url.Content("~/Content/Music3.mp3") %>" type="audio/mpeg">
+        </audio>
+</body>
+</html>
